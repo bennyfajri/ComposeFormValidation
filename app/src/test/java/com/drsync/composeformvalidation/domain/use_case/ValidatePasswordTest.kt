@@ -18,6 +18,6 @@ class ValidatePasswordTest {
     fun `Password is letter-only, return error` () {
         val result = validatePassword.execute("abcdefgh1J")
 
-        assertEquals(!result.successfull, false)
+        assertEquals(result.successfull, true)
     }
 }
